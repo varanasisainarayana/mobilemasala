@@ -1,0 +1,131 @@
+a {
+  text-decoration: none !important;
+  color: #f0e9e9 !important;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* login */
+.loginbtn {
+  background-color: #b3298d !important;
+  border: 0.0625rem solid #b3298d !important; /* 1px converted to rem */
+}
+
+.loginbtn:active {
+  background-color: #ffff00 !important;
+  border: 0.0625rem solid #152269 !important; /* 1px converted to rem */
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.navbar-custom {
+  background-color: rgb(51, 53, 71) !important;
+}
+
+.table-responsive::-webkit-scrollbar {
+  width: 0.125rem; /* 2px converted to rem */
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 0.25rem; /* 4px converted to rem */
+}
+
+.custom-shadow {
+  box-shadow: 0 0.25rem 0.5rem 0 0.25rem 0.5rem rgb(3 9 24 / 41%); /* 4px and 8px converted to rem */
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #333547;
+  color: white;
+  width: 15.625rem; /* 250px */
+  transition: width 0.3s ease;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Keeps logout at the bottom */
+}
+
+/* Sidebar Collapsed */
+.sidebar.collapsed {
+  width: 3.75rem; /* 60px */
+}
+
+/* Sidebar Items */
+.sidebar .nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.8rem; /* Reduced padding */
+  font-size: 1rem; /* Default size */
+  transition: background-color 0.3s;
+  white-space: nowrap; /* Prevents text wrapping */
+}
+
+/* Sidebar Labels */
+.sidebar .nav-item .nav-label {
+  margin-left: 0.625rem; /* 10px */
+}
+
+/* Hide Labels in Collapsed Mode */
+.sidebar.collapsed .nav-label {
+  display: none;
+}
+
+/* Sidebar Brand Logo */
+.sidebar .brand-logo {
+  height: 3rem;
+  margin: 0.625rem 1.125rem;
+  background: transparent;
+}
+
+/* Logout Section */
+.logout-section {
+  padding: 0.5rem; /* Reduced padding */
+  text-align: start;
+}
+
+/* Mobile View Adjustments */
+@media (max-height: 600px) {
+  .sidebar {
+    height: 100vh;
+  }
+
+  .sidebar .nav-item {
+    padding: 0.4rem 0.5rem; /* Reduce padding */
+    font-size: 0.85rem; /* Reduce font size */
+  }
+
+  .sidebar .brand-logo {
+    height: 2.5rem; /* Reduce logo size */
+    margin: 0.5rem; /* Less margin */
+  }
+
+  .logout-section {
+    padding: 0.4rem; /* Less padding */
+  }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 4rem;
+  }
+
+  .nav-label {
+    display: none;
+  }
+
+  .sidebar .brand-logo {
+    height: 3rem;
+    margin: 0.625rem;
+    background: #fff;
+    border-radius: 0.1rem;
+  }
+}

@@ -1,0 +1,102 @@
+
+a {
+      text-decoration: none !important;
+      color: #f0e9e9 !important;
+      box-sizing: border-box;
+
+}
+
+* {
+      font-family: 'Poppins', sans-serif;
+}
+
+/* login */
+
+.loginbtn {
+      background-color: #b3298d !important;
+      border: 1px solid #b3298d !important;
+
+}
+
+.loginbtn:active {
+      background-color: #FFFF00 !important;
+      border: 1px solid #152269 !important;
+}
+
+/* sidebar */
+.active {
+
+      color: #0e0101 !important;
+      background-color: #b3b4bd2b;
+      padding: 0.2rem 0.5rem;
+      width: auto;
+
+      
+}
+
+aside ul li:hover{
+      color: #0e0101 !important;
+      background-color: #b3b4bd2b;
+   
+      width: auto;
+      transition: 0.4s ease;
+}
+
+/* .dropdown-menu[data-bs-popper] {
+      top: 100%;
+      left: -120px !important;
+
+} */
+
+
+
+.cursor-pointer {
+      cursor: pointer;
+}
+
+.navbar-custom {
+      background-color: rgb(51, 53, 71) !important;
+}
+
+.table-responsive::-webkit-scrollbar {
+      width: 0.125rem; /* Width of the scrollbar */
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+      background: #888; /* Color of the scrollbar thumb */
+      border-radius: 0.25rem; /* Rounded edges */
+}
+
+.custom-shadow {
+      box-shadow: 0 4px 8px 0 4px 8px rgb(3 9 24 / 41%); 
+}     
+
+
+
+.sidebar-visible {
+    display: block; 
+    position: absolute; 
+    z-index: 1000; 
+    height: 100%; 
+    background-color: rgb(51, 53, 71); 
+}
+
+@media (max-width: 768px) {
+    .content-area {
+        margin-left: 0; 
+    }
+ 
+ 
+}
+
+@media (min-width: 769px) { 
+    .sidebar-visible {
+        display: block; 
+    }
+    .content-area {
+        margin-left:15.625rem; 
+    }
+}
+
+
+
